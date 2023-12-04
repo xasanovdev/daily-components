@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -8,7 +17,6 @@
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
   transition: 0.3s ease-in-out;
   max-width: 375px;
   width: 100%;
@@ -54,6 +62,25 @@
 .close-modal-button:active {
   background-color: rgb(228, 16, 58);
 }
+.modal-toggle-button {
+  z-index: 12;
+  cursor: pointer;
+  padding: 7px 12px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  top: 10px;
+  right: 10px;
+  transition: 0.2s ease-in-out;
+}
+.modal-toggle-button:hover {
+  background-color: rgb(32, 32, 32);
+}
+.modal-toggle-button:active {
+  background-color: rgb(59, 59, 59);
+}
 .next-modal-button {
   margin-top: 10px;
   padding: 7px 12px;
@@ -64,10 +91,23 @@
   color: white;
   background-color: green;
   transition: 0.2s ease-in-out;
+  pointer-events: all;
+}
+.next-modal-button.active {
+  pointer-events: none;
+  opacity: 0.7;
 }
 .next-modal-button:hover {
   background-color: rgb(18, 189, 41);
 }
 .next-modal-button:active {
   background-color: rgb(6, 114, 33);
+}
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+}
+.modal-input.error {
+  border: 1px solid red;
 }
