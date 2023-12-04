@@ -1,5 +1,6 @@
 const modalToggleButtons = document.querySelectorAll('.modal-toggle-button');
 const modalCloseButtons = document.querySelectorAll('.close-modal-button');
+const modalNextButtons = document.querySelectorAll('.next-modal-button');
 const overlay = document.querySelector('.overlay');
 const modals = document.querySelectorAll('.modal');
 
@@ -16,6 +17,29 @@ const closeModal = (modalId) => {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 };
+
+const removeActiveModals = () => {
+  modals.forEach((modal) => {
+    if (modal.classList.contains('active')) {
+      modal.classList.remove('active');
+    }
+  });
+};
+
+const nextModal = (modalId) => {
+  removeActiveModals();
+  const modal = document.getElementById(modalId);
+  setTimeout(() => {
+    modal.classList.add('active');
+  }, 200);
+};
+
+modalNextButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const modalId = button.getAttribute('modal-id');
+    nextModal(modalId);
+  });
+});
 
 modalToggleButtons.forEach((button) => {
   button.addEventListener('click', (e) => {

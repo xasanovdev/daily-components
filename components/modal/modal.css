@@ -54,3 +54,20 @@
 .close-modal-button:active {
   background-color: rgb(228, 16, 58);
 }
+.next-modal-button {
+  margin-top: 10px;
+  padding: 7px 12px;
+  outline: none;
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 8px;
+  color: white;
+  background-color: green;
+  transition: 0.2s ease-in-out;
+}
+.next-modal-button:hover {
+  background-color: rgb(18, 189, 41);
+}
+.next-modal-button:active {
+  background-color: rgb(6, 114, 33);
+}

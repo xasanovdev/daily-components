@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Multiple Modals Toggle Example</title>
-        <link rel="stylesheet" href="./modal.css">
-        <link rel="stylesheet" href="../../assets/css/normalize.css">
-    </head>
-    <body>
-        <!-- Trigger buttons for multiple modals -->
-        <button class="modal-toggle-button" modal-id="modal1">Open Modal 1</button>
-        <button class="modal-toggle-button" modal-id="modal2">Open Modal 2</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Modals Toggle Example</title>
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
+  </head>
+  <body>
+    <!-- Trigger buttons for multiple modals -->
+    <button class="modal-toggle-button" modal-id="modal1">Open Modal 1</button>
+    <button class="modal-toggle-button" modal-id="modal2">Open Modal 2</button>
+    <button class="modal-toggle-button" modal-id="modal3">Open Modal 3</button>
+    <button class="modal-toggle-button" modal-id="modal4">Open Modal 4</button>
 
-        <!-- Modals -->
-        <div id="modal1" class="modal">
-        <p>This is Modal 1!</p>
-        <button class="close-modal-button">Close</button>
-        </div>
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+      <p>This is Modal 1!</p>
 
-        <div id="modal2" class="modal">
-        <p>This is Modal 2!</p>
-        <button class="close-modal-button">Close</button>
-        </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
+        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
+        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
+        voluptatem corrupti.
+      </p>
+      <button class="next-modal-button" modal-id="modal2">next</button>
+      <button class="close-modal-button">Close</button>
+    </div>
+    <div id="modal2" class="modal">
+      <p>This is Modal 2!</p>
 
-        <!-- Overlay -->
-        <div class="overlay"></div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
+        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
+        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
+        voluptatem corrupti.
+      </p>
+      <button class="next-modal-button" modal-id="modal3">next</button>
+      <button class="close-modal-button">Close</button>
+    </div>
+    <div id="modal3" class="modal">
+      <p>This is Modal 3!</p>
 
-        <!-- JavaScript -->
-        <script src="./modal.js"></script>
-    </body>
-    </html>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
+        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
+        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
+        voluptatem corrupti.
+      </p>
+      <button class="next-modal-button" modal-id="modal4">next</button>
+      <button class="close-modal-button">Close</button>
+    </div>
+    <div id="modal4" class="modal">
+      <p>This is Modal 4!</p>
 
-    
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
+        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
+        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
+        voluptatem corrupti.
+      </p>
+      <button class="close-modal-button">Close</button>
+    </div>
 
-    
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="./modal.js"></script>
+  </body>
+</html>
