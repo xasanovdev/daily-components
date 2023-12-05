@@ -20,6 +20,7 @@ body {
   transition: 0.3s ease-in-out;
   max-width: 375px;
   width: 100%;
+  z-index: -1;
   border-radius: 10px;
 }
 .modal.active {

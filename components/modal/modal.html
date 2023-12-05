@@ -6,74 +6,83 @@
     <title>Multiple Modals Toggle Example</title>
     <link rel="stylesheet" href="./modal.css" />
     <link rel="stylesheet" href="../../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
   <body>
-    <!-- Trigger buttons for multiple modals -->
-    <button class="modal-toggle-button" modal-id="modal1">Open Modal 1</button>
-    <button class="modal-toggle-button" modal-id="modal2">Open Modal 2</button>
-    <button class="modal-toggle-button" modal-id="modal3">Open Modal 3</button>
-    <button class="modal-toggle-button" modal-id="modal4">Open Modal 4</button>
+    <div class="container">
+      <!-- Trigger buttons for multiple modals -->
+      <button class="modal-toggle-button" modal-id="modal1">
+        Open Modal 1
+      </button>
+      <button class="modal-toggle-button" modal-id="modal2">
+        Open Modal 2
+      </button>
+      <button class="modal-toggle-button" modal-id="modal3">
+        Open Modal 3
+      </button>
+      <button class="modal-toggle-button" modal-id="modal4">
+        Open Modal 4
+      </button>
 
-    <!-- Modals -->
-    <div id="modal1" class="modal">
-      <p>This is Modal 1!</p>
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <p>This is Modal 1!</p>
 
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
-        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
-        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
-        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
-        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
-        voluptatem corrupti.
-      </p>
-      <button class="next-modal-button" modal-id="modal2">next</button>
-      <button class="close-modal-button">Close</button>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+          suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+          quasi! Quaerat perspiciatis illum, quisquam magni officia maiores
+          libero dolor aliquam dolores, impedit cumque tenetur molestiae
+          laboriosam ab, facilis iure harum. Odit, possimus unde culpa soluta
+          nobis excepturi voluptatem corrupti.
+        </p>
+        <button class="next-modal-button" modal-id="modal2">next</button>
+        <button class="close-modal-button">Close</button>
+      </div>
+      <div id="modal2" class="modal">
+        <p>This is Modal 2!</p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+          suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+          quasi! Quaerat perspiciatis illum, quisquam magni officia maiores
+          libero dolor aliquam dolores, impedit cumque tenetur molestiae
+          laboriosam ab, facilis iure harum. Odit, possimus unde culpa soluta
+          nobis excepturi voluptatem corrupti.
+        </p>
+        <input type="text" class="modal-input" />
+        <button class="next-modal-button" modal-id="modal3">next</button>
+        <button class="close-modal-button">Close</button>
+      </div>
+      <div id="modal3" class="modal">
+        <p>This is Modal 3!</p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+          suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+          quasi! Quaerat perspiciatis illum, quisquam magni officia maiores
+          libero dolor aliquam dolores, impedit cumque tenetur molestiae
+          laboriosam ab, facilis iure harum. Odit, possimus unde culpa soluta
+          nobis excepturi voluptatem corrupti.
+        </p>
+        <input type="text" class="modal-input" />
+        <button class="next-modal-button" modal-id="modal4">next</button>
+        <button class="close-modal-button">Close</button>
+      </div>
+      <div id="modal4" class="modal">
+        <p>This is Modal 4!</p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
+          suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
+          quasi! Quaerat perspiciatis illum, quisquam magni officia maiores
+          libero dolor aliquam dolores, impedit cumque tenetur molestiae
+          laboriosam ab, facilis iure harum. Odit, possimus unde culpa soluta
+          nobis excepturi voluptatem corrupti.
+        </p>
+        <button class="close-modal-button">Close</button>
+      </div>
     </div>
-    <div id="modal2" class="modal">
-      <p>This is Modal 2!</p>
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
-        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
-        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
-        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
-        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
-        voluptatem corrupti.
-      </p>
-        <input type="text" class="modal-input">
-      <button class="next-modal-button" modal-id="modal3">next</button>
-      <button class="close-modal-button">Close</button>
-    </div>
-    <div id="modal3" class="modal">
-      <p>This is Modal 3!</p>
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
-        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
-        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
-        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
-        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
-        voluptatem corrupti.
-      </p>
-      <input type="text" class="modal-input">
-      <button class="next-modal-button" modal-id="modal4">next</button>
-      <button class="close-modal-button">Close</button>
-    </div>
-    <div id="modal4" class="modal">
-      <p>This is Modal 4!</p>
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ducimus
-        suscipit magni natus facilis ipsam, aperiam nam omnis quo sapiente
-        quasi! Quaerat perspiciatis illum, quisquam magni officia maiores libero
-        dolor aliquam dolores, impedit cumque tenetur molestiae laboriosam ab,
-        facilis iure harum. Odit, possimus unde culpa soluta nobis excepturi
-        voluptatem corrupti.
-      </p>
-      <button class="close-modal-button">Close</button>
-    </div>
-
-
     <!-- Overlay -->
     <div class="overlay"></div>
 
