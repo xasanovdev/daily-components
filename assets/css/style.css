@@ -1,5 +1,29 @@
 .container {
   max-width: 768px;
+  width: 100%;
   padding: 0 1rem;
   margin: auto;
+  margin-top: 100px;
+}
+.main-wrapper {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  width: 40%;
+}
+.main-wrapper a {
+  width: 100%;
+  text-align: center;
+  background-color: blueviolet;
+  color: violet;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  padding: 7px 12px;
+}
+
+.main-wrapper div:hover {
+  transform: scale(1.1);
 }
