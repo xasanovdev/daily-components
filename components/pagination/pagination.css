@@ -1,0 +1,36 @@
+/* Add your styles here */
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination button {
+  display: inline;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination button.active {
+  background-color: darkorchid;
+  color: #fff;
+  border: 1px solid darkorchid;
+}
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content div {
+  padding: 10px;
+  border: 1px solid darkorchid;
+}
