@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./select.css" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="select" id="countryForm">
+        <div class="select-value">
+          <span class="value" id="selectedValue">Select value</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <ul class="select-list">
+          <label class="select-item active">
+            <span>Uzbekistan</span>
+            <input
+              type="radio"
+              name="country"
+              id="Uzbekistan"
+              value="Uzbekistan"
+            />
+          </label>
+          <label class="select-item">
+            <span>Kirgiz</span>
+            <input type="radio" name="country" id="Kirgiz" value="Kirgiz" />
+          </label>
+          <label class="select-item">
+            <span>Toshkent</span>
+            <input type="radio" name="country" id="Toshkent" value="Toshkent" />
+          </label>
+          <label class="select-item">
+            <span>New-York</span>
+            <input type="radio" name="country" id="New-York" value="New-York" />
+          </label>
+          <label class="select-item">
+            <span>Florida</span>
+            <input type="radio" name="country" id="Florida" value="Florida" />
+          </label>
+        </ul>
+      </form>
+    </div>
+
+    <script src="./select.js"></script>
+  </body>
+</html>
