@@ -1,0 +1,37 @@
+.tab-content {
+  width: 100%;
+}
+.tab-navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-body {
+  width: 100%;
+}
+.tab-navbar__item {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+.tab-item {
+  display: none;
+}
+.tab-item.active {
+  display: block;
+}
+.tab-navbar__item{
+  padding: 7px 12px;
+  color: red;
+  background-color: transparent;
+}
+.tab-navbar__link {
+  color: black;
+}
+.tab-navbar__item.active {
+  background-color: black;
+  color: white;
+}
+.tab-navbar__item.active .tab-navbar__link {
+  color: white;
+}
